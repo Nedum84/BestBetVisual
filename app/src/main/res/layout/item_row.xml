@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@drawable/it_bg"
+    android:id="@+id/wrapper"
+    android:gravity="center_vertical"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circ"
+        android:id="@+id/frameLayout">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            tools:ignore="UselessParent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/unknown"
+                android:layout_gravity="center"
+                android:id="@+id/success"
+                tools:ignore="VectorDrawableCompat"/>
+            <TextView
+                android:text="1.32"
+                android:textStyle="bold"
+                android:fontFamily="georgia"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                tools:layout_editor_absoluteY="70dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:id="@+id/odds"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:text="Club1 vs Club2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teams"
+                android:textSize="14sp"
+                android:ellipsize="middle"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="georgia"
+                android:layout_width="0dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:text="(2 - 3)"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/score"
+                android:textColor="#ababab"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:text="Seria A"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/league"
+                android:textColor="#eee"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:ellipsize="middle"
+                android:singleLine="true" />
+
+            <TextView
+                android:text="Pred.: GG&amp;Ov2.5"
+                android:layout_gravity="center"
+                android:textColor="#eee"
+                android:layout_height="wrap_content"
+                android:id="@+id/predition"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/circ"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="1dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="2020-12-16"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:text="19:00"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="georgia"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

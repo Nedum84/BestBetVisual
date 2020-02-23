@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Best Bet Visual</string>
+
+
+    <!--ads-->
+    <string name="ads_app_id">ca-app-pub-9747776384845292~7685024843</string>
+    <string name="banner_test_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ads1">ca-app-pub-9747776384845292/3601491366</string>
+    <string name="interstitial_ads1">ca-app-pub-9747776384845292/1843533048</string>
+</resources>
